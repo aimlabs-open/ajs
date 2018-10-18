@@ -1,0 +1,55 @@
+{
+  "name": "ajs",
+  "version": "1.0.0",
+  "description": "AIMLABS JAVASCRIPT LIBRARY",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --env=prod --config webpack.config.js",
+    "serve": "webpack-dev-server --env=dev --config webpack.config.js",
+    "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aimlabs/ajs.git"
+  },
+  "keywords": [
+    "data",
+    "binding",
+    "router",
+    "selector",
+    "components"
+  ],
+  "author": "Suresh Reddy Guntaka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aimlabs/ajs/issues"
+  },
+  "homepage": "https://github.com/aimlabs/ajs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "docdash": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jsdoc": "^3.5.5",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.9.3",
+    "path": "^0.12.7",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
